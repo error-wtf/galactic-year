@@ -1,0 +1,148 @@
+# Antikapitalistische Softwarelizenz (Version 1.4)
+
+## Copyright (c) 2026 Lino Casu & Carmen Wrede
+
+Diese Software und die dazugehörigen Dokumentationsdateien (die "Software") werden Ihnen unter den folgenden Bedingungen zur Verfügung gestellt:
+
+---
+
+## 1. Nutzungsrechte
+
+### 1.1 Erlaubte Nutzung
+
+Die folgenden Nutzungsarten sind ohne Einschränkung gestattet:
+
+- **Persönliche Nutzung**: Private, nicht-kommerzielle Verwendung
+- **Bildung und Forschung**: Nutzung in Bildungseinrichtungen, Universitäten, Schulen
+- **Wissenschaftliche Forschung**: Akademische Studien, wissenschaftliche Publikationen
+- **Open-Source-Projekte**: Integration in andere freie Software-Projekte unter gleicher Lizenz
+- **Kunst und Kultur**: Nutzung in künstlerischen, kulturellen und dokumentarischen Projekten
+
+### 1.2 Bedingte Nutzung (Genehmigung erforderlich)
+
+Die folgenden Nutzungsarten bedürfen der vorherigen schriftlichen Genehmigung der Autoren:
+
+- **Kommerzielle Nutzung**: Jede Form der kommerziellen Verwendung, einschließlich:
+  - Verkauf der Software oder abgeleiteter Werke
+  - Nutzung in kommerziellen Produkten oder Dienstleistungen
+  - Integration in proprietäre Software
+  - Nutzung durch gewinnorientierte Unternehmen
+
+Genehmigungen werden grundsätzlich nur gewährt, wenn:
+- Die kommerzielle Nutzung dem Gemeinwohl dient
+- Mindestens 50% des Gewinns in soziale oder ökologische Projekte reinvestiert wird
+- Die Arbeitsbedingungen fair und demokratisch sind
+- Keine Monopolbildung oder Marktbeherrschung angestrebt wird
+
+---
+
+## 2. Verbotene Nutzung
+
+### 2.1 Strikte Verbote
+
+Die Nutzung dieser Software ist EXPLIZIT VERBOTEN für:
+
+- **Militärische Zwecke**: Entwicklung, Test, Einsatz von Waffen, Kriegsführung
+- **Überwachungstechnologie**: Massenüberwachung, Spionage, staatliche Kontrolle
+- **Polizei und Strafverfolgung**: Predictive Policing, Algorithmische Überwachung
+- **Geheimdienste**: Alle Nachrichtendienste und Spionagebehörden
+- **Autoritäre Regime**: Regierungen mit systematischen Menschenrechtsverletzungen
+- **Private Militärfirmen**: Söldner, paramilitärische Organisationen
+- **Gefängnisse und Haftanstalten**: Insassenüberwachung, Algorithmische Bewertung
+- **Grenzkontrollen und Abschiebungen**: Automatisierte Migrationskontrolle
+
+### 2.2 Kapitalistische Ausbeutung
+
+Es ist untersagt, diese Software zu nutzen für:
+- **Gewinnmaximierung auf Kosten von Arbeitnehmern**: Ausbeutung, Prekarisierung, Lohndumping
+- **Monopolbildung**: Marktbeherrschung, Eliminierung von Konkurrenz
+- **Spekulation**: Finanzspekulation, Hedgefonds, Derivathandel
+- **Ressourcenplünderung**: Ausbeutung natürlicher Ressourcen in Entwicklungsländern
+
+---
+
+## 3. Bedingungen für Verteilung und Modifikation
+
+### 3.1 Copyleft
+
+Jede Verteilung oder öffentliche Verfügbarmachung der Software, ob in ursprünglicher oder modifizierter Form, muss unter den Bedingungen dieser Lizenz erfolgen.
+
+### 3.2 Quellcode
+
+Bei Verteilung von abgeleiteten Werken muss der vollständige Quellcode unter gleicher Lizenz zur Verfügung gestellt werden.
+
+### 3.3 Attribuierung
+
+Bei jeder Nutzung, Verteilung oder Modifikation muss die ursprüngliche Urheberschaft angegeben werden:
+- Lino Casu (Konzept & SSZ-Physik)
+- Carmen Wrede (SSZ Framework Entwicklung)
+
+---
+
+## 4. Gewährleistungsausschluss
+
+DIE SOFTWARE WIRD "WIE BESEHEN" OHNE JEGLICHE GEWÄHRLEISTUNG BEREITGESTELLT, WEDER AUSDRÜCKLICH NOCH STILLSCHWEIGEND, EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF DIE GEWÄHRLEISTUNG DER MARKTGÄNGIGKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN ZWECK UND DER NICHTVERLETZUNG VON RECHTEN DRITTER.
+
+IN KEINEM FALL SIND DIE AUTOREN HAFTBAR FÜR ANSPRÜCHE, SCHÄDEN ODER ANDERE VERBINDLICHKEITEN, OB IN EINER VERTRAGS- ODER HAFTUNGSKLAGE, EINER UNERLAUBTEN HANDLUNG ODER ANDERWEITIG, DIE SICH AUS DER SOFTWARE ODER DER NUTZUNG ODER ANDEREN GESCHÄFTEN MIT DER SOFTWARE ERGEBEN.
+
+---
+
+## 5. Lizenz-Terminierung
+
+Bei Verstoß gegen diese Lizenzbedingungen erlöschen automatisch alle Rechte aus dieser Lizenz.
+
+---
+
+## 6. Geltendes Recht
+
+Diese Lizenz unterliegt deutschem Recht. Streitigkeiten werden vor dem Landgericht Berlin verhandelt.
+
+---
+
+## 7. Philosophische Grundlage
+
+Diese Lizenz basiert auf der Überzeugung, dass:
+
+1. **Wissenschaft zum Gemeinwohl dient**: Wissenschaft und Technologie sollten der gesamten Menschheit zugutekommen, nicht nur Privilegierten.
+
+2. **Wissen ist Gemeingut**: Wissenschaftliche Erkenntnisse sollten frei zugänglich und nicht durch Patente oder Geheimhaltung beschränkt sein.
+
+3. **Technologie ist politisch**: Technische Entscheidungen haben gesellschaftliche Konsequenzen und müssen demokratisch kontrolliert werden.
+
+4. **Freiheit erfordert Solidarität**: Die Freiheit der einen endet dort, wo sie die Freiheit anderer einschränkt – insbesondere durch Ausbeutung und Unterdrückung.
+
+5. **Gegen den Kapitalismus**: Das aktuelle Wirtschaftssystem, das auf Gewinnmaximierung und Ausbeutung basiert, ist unvereinbar mit menschlicher Würde und ökologischer Nachhaltigkeit.
+
+---
+
+## 8. Kontakt und Genehmigungen
+
+Für Genehmigungsanfragen oder Fragen zur Lizenz:
+- GitHub: https://github.com/error-wtf/galactic-year
+- Lizenzanfragen: Bitte öffnen Sie ein GitHub-Issue
+
+---
+
+## 9. Version
+
+Dies ist Version 1.4 der Antikapitalistischen Softwarelizenz.
+
+Letzte Aktualisierung: April 2026
+
+---
+
+## 10. Danksagung
+
+Diese Lizenz wurde inspiriert von:
+- Der GPL (GNU General Public License) - für das Copyleft-Prinzip
+- Der Ethical Source Movement - für den Fokus auf Ethik
+- Der Antikapitalistischen Softwarelizenz-Initiative
+- Den Arbeiten von Richard Stallman und der Free Software Foundation
+
+Wir danken allen, die für freie Software und eine gerechte Gesellschaft kämpfen.
+
+---
+
+**Für eine Welt, in der Wissenschaft und Technologie dem Menschen dienen, nicht dem Profit.**
+
+*Lino Casu & Carmen Wrede*
