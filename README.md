@@ -22,15 +22,13 @@ Die Sonne benötigt ca. **230 Millionen Jahre** für einen Umlauf um das galakti
 
 ---
 
-## Haupt-Animationen
+## Animationen
 
 ### 1. Klassische Kepler-Bahn (2D)
 
+![Klassische Umlaufbahn](https://raw.githubusercontent.com/error-wtf/galactic-year/main/output/01_orbit_classical.gif)
+
 Die klassische elliptische Umlaufbahn mit radialer Geschwindigkeitsvariation:
-
-![Klassische Umlaufbahn](output/01_orbit_classical.gif)
-
-**Parameter:**
 - Perigalaktikum: ~7.8 kpc (schnellste Bewegung)
 - Apogalaktikum: ~9.2 kpc (langsamste Bewegung)
 - Bahnebenen-Neigung: ca. 0.5°
@@ -39,11 +37,9 @@ Die klassische elliptische Umlaufbahn mit radialer Geschwindigkeitsvariation:
 
 ### 2. SSZ vs. Klassisch - Seitlicher Vergleich
 
+![SSZ Vergleich](https://raw.githubusercontent.com/error-wtf/galactic-year/main/output/02_orbit_ssz_comparison.gif)
+
 Direkter Vergleich der klassischen und SSZ-korrigierten Bahn:
-
-![SSZ Vergleich](output/02_orbit_ssz_comparison.gif)
-
-**Beobachtung:** Bei galaktischen Distanzen (r >> r_s) ist der SSZ-Effekt minimal:
 - Ξ(R₀) ≈ 6×10⁻⁸
 - D(R₀) ≈ 0.99999994
 - Geschwindigkeitsreduktion: ~0.0000%
@@ -52,59 +48,48 @@ Direkter Vergleich der klassischen und SSZ-korrigierten Bahn:
 
 ### 3. 3D-Animation mit vertikaler Oszillation
 
-Die vollständige 3D-Bahn zeigt die vertikale Oszillation der Sonne durch die galaktische Scheibe:
+![3D Umlaufbahn](https://raw.githubusercontent.com/error-wtf/galactic-year/main/output/03_orbit_3d.gif)
 
-![3D Umlaufbahn](output/03_orbit_3d.gif)
-
-**3D-Parameter:**
+Die vollständige 3D-Bahn zeigt die vertikale Oszillation:
 - Vertikale Amplitude: ±0.08 kpc
 - Oszillationsperiode: ~70 Millionen Jahre
 - Rotierende Kameraansicht
 
 ---
 
-## Zusätzliche Visualisierungen
-
 ### 4. Solar Orbit 2D (Erweitert)
 
-Detaillierte 2D-Darstellung der Sonnenbahn über mehrere Galaktische Jahre:
+![Solar Orbit 2D](https://raw.githubusercontent.com/error-wtf/galactic-year/main/output/solar_orbit_2d.gif)
 
-![Solar Orbit 2D](output/solar_orbit_2d.gif)
-
-- **Dateigröße:** ~18 MB
-- **Dauer:** Mehrere Umläufe
-- **Details:** Vollständige Bahnsimulation mit Geschwindigkeitsvektoren
+Detaillierte 2D-Darstellung über mehrere Galaktische Jahre:
+- Dateigröße: ~18 MB
+- Dauer: Mehrere Umläufe
+- Mit Geschwindigkeitsvektoren
 
 ---
 
 ### 5. Solar Orbit 3D (Erweitert)
 
-Hochauflösende 3D-Visualisierung mit vertikaler Oszillation:
+![Solar Orbit 3D](https://raw.githubusercontent.com/error-wtf/galactic-year/main/output/solar_orbit_3d.gif)
 
-![Solar Orbit 3D](output/solar_orbit_3d.gif)
-
-- **Dateigröße:** ~13 MB
-- **Perspektive:** Frei rotierbare 3D-Ansicht
-- **Besonderheit:** Zeigt die "Wobbel"-Bewegung durch die Galaxie
+Hochauflösende 3D-Visualisierung:
+- Dateigröße: ~13 MB
+- Frei rotierbare 3D-Ansicht
+- Zeigt die "Wobbel"-Bewegung durch die Galaxie
 
 ---
 
 ### 6. Aktuelle Position (Statisch)
 
-Snapshot der aktuellen Sonnenposition in der Galaxie:
+![Aktuelle Position](https://raw.githubusercontent.com/error-wtf/galactic-year/main/output/solar_orbit_now.png)
 
-![Aktuelle Position](output/solar_orbit_now.png)
-
-- **Format:** PNG (hochaufgelöst)
-- **Zeigt:** Momentane Position relativ zum galaktischen Zentrum
+Snapshot der aktuellen Sonnenposition in der Galaxie.
 
 ---
 
 ## Physikalische Grundlagen
 
 ### Klassische Mechanik
-
-Die Kepler-Bahn wird durch die Gravitationskraft bestimmt:
 
 ```
 v = √(GM/r)
@@ -118,22 +103,11 @@ T = 2π √(a³/GM)
 
 ### SSZ (Segmented Spacetime) Framework
 
-Das SSZ-Framework modifiziert die Zeitdilatation:
+**Zeitdilatation:** `D(r) = 1/(1 + Ξ(r))`
 
-**Zeitdilatation:**
-```
-D(r) = 1/(1 + Ξ(r))
-```
+**Weak Field:** `Ξ(r) = r_s/(2r)` für r >> r_s
 
-**Xi-Parameter (Weak Field):**
-```
-Ξ(r) = r_s/(2r)   für r >> r_s
-```
-
-**Xi-Parameter (Strong Field):**
-```
-Ξ(r) = 1 - exp(-φ·r/r_s)   für r ~ r_s
-```
+**Strong Field:** `Ξ(r) = 1 - exp(-φ·r/r_s)` für r ~ r_s
 
 Mit φ = (1 + √5)/2 ≈ 1.618 (Goldener Schnitt)
 
@@ -141,48 +115,23 @@ Mit φ = (1 + √5)/2 ≈ 1.618 (Goldener Schnitt)
 
 ## Installation
 
-### Voraussetzungen
-
-- Python 3.8 oder höher
-- pip
-
-### Abhängigkeiten installieren
-
 ```bash
 pip install -r requirements.txt
 ```
 
-**Erforderliche Pakete:**
-- numpy >= 1.21.0
-- matplotlib >= 3.5.0
-- imageio >= 2.9.0
-- tqdm >= 4.62.0
+**Abhängigkeiten:** numpy, matplotlib, imageio, tqdm, requests
 
 ---
 
 ## Verwendung
 
-### Komplette Pipeline ausführen
-
 ```bash
+# Komplette Pipeline
 python run_all.py
-```
 
-Dies führt alle drei Schritte aus:
-1. **Daten-Fetching** - API-Abfrage + Literaturwerte
-2. **SSZ-Berechnung** - Zeitdilatationskorrekturen
-3. **Animation** - 6 Visualisierungen erstellen
-
-### Einzelne Skripte
-
-```bash
-# Nur Daten fetchten
+# Einzelne Schritte
 python fetch_orbit_data.py
-
-# Nur SSZ-Berechnung
 python calculate_ssz_orbit.py
-
-# Nur Animationen (benötigt JSON-Dateien)
 python animate_orbit.py
 ```
 
@@ -190,56 +139,25 @@ python animate_orbit.py
 
 ## Ausgabedateien
 
-### Haupt-Animationen (Kompakt)
 | Datei | Größe | Beschreibung |
 |-------|-------|--------------|
 | `01_orbit_classical.gif` | ~58 KB | Klassische 2D-Animation |
-| `02_orbit_ssz_comparison.gif` | ~85 KB | Seitlicher Vergleich |
+| `02_orbit_ssz_comparison.gif` | ~85 KB | SSZ Vergleich |
 | `03_orbit_3d.gif` | ~85 KB | 3D-Animation |
-
-### Erweiterte Visualisierungen
-| Datei | Größe | Beschreibung |
-|-------|-------|--------------|
-| `solar_orbit_2d.gif` | ~18 MB | Detaillierte 2D-Bahn |
-| `solar_orbit_3d.gif` | ~13 MB | Hochauflösende 3D-Ansicht |
-| `solar_orbit_now.png` | ~482 KB | Aktuelle Position (Snapshot) |
-
-### Daten
-| Datei | Größe | Beschreibung |
-|-------|-------|--------------|
-| `orbit_data.json` | ~620 KB | Klassische Orbitdaten (2000 Punkte) |
-| `ssz_orbit_data.json` | ~540 KB | SSZ-korrigierte Daten |
+| `solar_orbit_2d.gif` | ~18 MB | Erweiterte 2D-Bahn |
+| `solar_orbit_3d.gif` | ~13 MB | Erweiterte 3D-Ansicht |
+| `solar_orbit_now.png` | ~482 KB | Aktuelle Position |
 
 ---
 
 ## Ergebnisse
 
-### SSZ-Zeitdilatation bei R₀
-
 | Parameter | Wert |
 |-----------|------|
 | Ξ(R₀) | 6.2 × 10⁻⁸ |
 | D(R₀) | 0.999999938 |
-| Schwarzschild-Radius (Sgr A*) | 1.27 × 10¹⁰ m |
-| r/r_s | 2.02 × 10¹⁰ |
-
-### Geschwindigkeitsvergleich
-
-| Modell | Mittlere Geschwindigkeit | Umlaufzeit |
-|--------|-------------------------|------------|
-| Klassisch | 247.8 km/s | 230.0 Myr |
-| SSZ | 247.8 km/s | 230.0 Myr |
-
-**Fazit:** Bei galaktischen Distanzen ist der SSZ-Effekt auf die Sonnenbahn vernachlässigbar (Δ < 10⁻⁷). Der Unterschied wäre jedoch in der Nähe kompakter Objekte (Neutronensterne, Schwarze Löcher) signifikant.
-
----
-
-## Literatur
-
-1. **SIMBAD Astronomical Database** - [simbad.u-strasbg.fr](http://simbad.u-strasbg.fr)
-2. **UCL PHAS1102** - Galactic Dynamics Problem Set
-3. **arXiv:1401.5377** - "The orbit of the Sun in the Galaxy"
-4. **SSZ Framework** - Segmented Spacetime Theorie (Wrede & Casu)
+| Umlaufzeit | 230.0 Millionen Jahre |
+| Mittlere Geschwindigkeit | 247.8 km/s |
 
 ---
 
@@ -256,29 +174,13 @@ python animate_orbit.py
 
 Copyright (c) 2026 Lino Casu & Carmen Wrede
 
-Diese Software ist unter der Antikapitalistischen Lizenz 1.4 lizenziert.
+- ✅ Nicht-kommerzielle Nutzung frei
+- ✅ Bildung/Forschung willkommen  
+- ⚠️ Kommerzielle Nutzung nur mit Genehmigung
+- ❌ Militärische & Überwachungszwecke verboten
 
-**Kernpunkte:**
-- ✅ Nicht-kommerzielle Nutzung frei erlaubt
-- ✅ Bildungs- und Forschungszwecke willkommen
-- ✅ Modifikation und Verteilung unter gleicher Lizenz erlaubt
-- ⚠️ Kommerzielle Nutzung nur mit ausdrücklicher Genehmigung
-- ❌ Militärische und Überwachungstechnologie-Anwendungen verboten
-- ❌ Nutzung durch Polizei, Geheimdienste und autoritäre Regime verboten
-
-Die Antikapitalistische Lizenz stellt sicher, dass Wissenschaft und Technologie dem Gemeinwohl dienen, nicht der Profitsucht oder Unterdrückung.
-
-Siehe [LICENSE](LICENSE) Datei für vollständigen Lizenztext.
+Siehe [LICENSE](LICENSE) für vollständigen Text.
 
 ---
 
-## GitHub Repository
-
-**URL:** `https://github.com/error-wtf/galactic-year`
-
-```bash
-git clone https://github.com/error-wtf/galactic-year.git
-cd galactic-year
-pip install -r requirements.txt
-python run_all.py
-```
+**Repository:** https://github.com/error-wtf/galactic-year
