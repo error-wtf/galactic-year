@@ -1,7 +1,7 @@
 # Galactic Year - Sonnenorbit Simulation
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://python.org)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-Antikapitalistisch%201.4-red)](LICENSE)
 [![SSZ](https://img.shields.io/badge/SSZ-Framework-orange)](https://github.com/topics/segmented-spacetime)
 
 **Berechnung und Visualisierung der galaktischen Umlaufbahn der Sonne mit klassischer Kepler-Mechanik und dem Segmented Spacetime (SSZ) Framework.**
@@ -22,7 +22,7 @@ Die Sonne benötigt ca. **230 Millionen Jahre** für einen Umlauf um das galakti
 
 ---
 
-## Animationen
+## Haupt-Animationen
 
 ### 1. Klassische Kepler-Bahn (2D)
 
@@ -60,6 +60,43 @@ Die vollständige 3D-Bahn zeigt die vertikale Oszillation der Sonne durch die ga
 - Vertikale Amplitude: ±0.08 kpc
 - Oszillationsperiode: ~70 Millionen Jahre
 - Rotierende Kameraansicht
+
+---
+
+## Zusätzliche Visualisierungen
+
+### 4. Solar Orbit 2D (Erweitert)
+
+Detaillierte 2D-Darstellung der Sonnenbahn über mehrere Galaktische Jahre:
+
+![Solar Orbit 2D](output/solar_orbit_2d.gif)
+
+- **Dateigröße:** ~18 MB
+- **Dauer:** Mehrere Umläufe
+- **Details:** Vollständige Bahnsimulation mit Geschwindigkeitsvektoren
+
+---
+
+### 5. Solar Orbit 3D (Erweitert)
+
+Hochauflösende 3D-Visualisierung mit vertikaler Oszillation:
+
+![Solar Orbit 3D](output/solar_orbit_3d.gif)
+
+- **Dateigröße:** ~13 MB
+- **Perspektive:** Frei rotierbare 3D-Ansicht
+- **Besonderheit:** Zeigt die "Wobbel"-Bewegung durch die Galaxie
+
+---
+
+### 6. Aktuelle Position (Statisch)
+
+Snapshot der aktuellen Sonnenposition in der Galaxie:
+
+![Aktuelle Position](output/solar_orbit_now.png)
+
+- **Format:** PNG (hochaufgelöst)
+- **Zeigt:** Momentane Position relativ zum galaktischen Zentrum
 
 ---
 
@@ -134,7 +171,7 @@ python run_all.py
 Dies führt alle drei Schritte aus:
 1. **Daten-Fetching** - API-Abfrage + Literaturwerte
 2. **SSZ-Berechnung** - Zeitdilatationskorrekturen
-3. **Animation** - 3 GIFs erstellen
+3. **Animation** - 6 Visualisierungen erstellen
 
 ### Einzelne Skripte
 
@@ -153,13 +190,25 @@ python animate_orbit.py
 
 ## Ausgabedateien
 
+### Haupt-Animationen (Kompakt)
+| Datei | Größe | Beschreibung |
+|-------|-------|--------------|
+| `01_orbit_classical.gif` | ~58 KB | Klassische 2D-Animation |
+| `02_orbit_ssz_comparison.gif` | ~85 KB | Seitlicher Vergleich |
+| `03_orbit_3d.gif` | ~85 KB | 3D-Animation |
+
+### Erweiterte Visualisierungen
+| Datei | Größe | Beschreibung |
+|-------|-------|--------------|
+| `solar_orbit_2d.gif` | ~18 MB | Detaillierte 2D-Bahn |
+| `solar_orbit_3d.gif` | ~13 MB | Hochauflösende 3D-Ansicht |
+| `solar_orbit_now.png` | ~482 KB | Aktuelle Position (Snapshot) |
+
+### Daten
 | Datei | Größe | Beschreibung |
 |-------|-------|--------------|
 | `orbit_data.json` | ~620 KB | Klassische Orbitdaten (2000 Punkte) |
 | `ssz_orbit_data.json` | ~540 KB | SSZ-korrigierte Daten |
-| `01_orbit_classical.gif` | ~58 KB | Klassische 2D-Animation |
-| `02_orbit_ssz_comparison.gif` | ~85 KB | Seitlicher Vergleich |
-| `03_orbit_3d.gif` | ~85 KB | 3D-Animation |
 
 ---
 
@@ -203,16 +252,32 @@ python animate_orbit.py
 
 ## Lizenz
 
-MIT License - Siehe [LICENSE](LICENSE) Datei
+**Antikapitalistische Lizenz 1.4**
+
+Copyright (c) 2026 Lino Casu & Carmen Wrede
+
+Diese Software ist unter der Antikapitalistischen Lizenz 1.4 lizenziert.
+
+**Kernpunkte:**
+- ✅ Nicht-kommerzielle Nutzung frei erlaubt
+- ✅ Bildungs- und Forschungszwecke willkommen
+- ✅ Modifikation und Verteilung unter gleicher Lizenz erlaubt
+- ⚠️ Kommerzielle Nutzung nur mit ausdrücklicher Genehmigung
+- ❌ Militärische und Überwachungstechnologie-Anwendungen verboten
+- ❌ Nutzung durch Polizei, Geheimdienste und autoritäre Regime verboten
+
+Die Antikapitalistische Lizenz stellt sicher, dass Wissenschaft und Technologie dem Gemeinwohl dienen, nicht der Profitsucht oder Unterdrückung.
+
+Siehe [LICENSE](LICENSE) Datei für vollständigen Lizenztext.
 
 ---
 
 ## GitHub Repository
 
-**URL:** `https://github.com/linocasu/galactic-year`
+**URL:** `https://github.com/error-wtf/galactic-year`
 
 ```bash
-git clone https://github.com/linocasu/galactic-year.git
+git clone https://github.com/error-wtf/galactic-year.git
 cd galactic-year
 pip install -r requirements.txt
 python run_all.py
