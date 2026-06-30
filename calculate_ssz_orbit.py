@@ -50,7 +50,7 @@ def xi_strong_field(r: np.ndarray, r_s: float, phi: float = PHI) -> np.ndarray:
     SSZ Strong Field: Xi(r) = 1 - exp(-phi·r/r_s)
     Gültig für r/r_s < 100
     """
-    return 1 - np.exp(-phi * r / r_s)
+    return 1 - np.exp(-phi * r_s / r)
 
 
 def xi_unified(r: np.ndarray, r_s: float, r_transition: float = 100.0, 
