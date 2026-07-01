@@ -6,7 +6,7 @@ Berechnet die Umlaufbahn der Sonne mit Segmented Spacetime (SSZ) Framework.
 SSZ-Modifikationen:
 - Zeitdilatation D(r) = 1/(1 + Xi(r))
 - Weak Field: Xi(r) = r_s/(2r) für r >> r_s
-- Strong Field: Xi(r) = 1 - exp(-phi·r/r_s) für r ~ r_s
+- Strong Field: Xi(r) = 1 - exp(-phi·r_s / r) für r ~ r_s
 - phi = (1 + √5)/2 ≈ 1.618 (Goldener Schnitt)
 
 Die SSZ-Zeit beeinflusst die effektive Umlaufgeschwindigkeit und Periode.
@@ -47,7 +47,7 @@ def xi_weak_field(r: np.ndarray, r_s: float) -> np.ndarray:
 
 def xi_strong_field(r: np.ndarray, r_s: float, phi: float = PHI) -> np.ndarray:
     """
-    SSZ Strong Field: Xi(r) = 1 - exp(-phi·r/r_s)
+    SSZ Strong Field: Xi(r) = 1 - exp(-phi·r_s / r)
     Gültig für r/r_s < 100
     """
     return 1 - np.exp(-phi * r_s / r)

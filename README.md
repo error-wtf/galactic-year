@@ -107,7 +107,7 @@ T = 2π √(a³/GM)
 
 **Weak Field:** `Ξ(r) = r_s/(2r)` für r >> r_s
 
-**Strong Field:** `Ξ(r) = 1 - exp(-φ·r/r_s)` für r ~ r_s
+**Strong Field:** `Ξ(r) = 1 - exp(-φ·r_s / r)` für r ~ r_s
 
 Mit φ = (1 + √5)/2 ≈ 1.618 (Goldener Schnitt)
 
